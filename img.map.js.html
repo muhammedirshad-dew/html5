@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>image map and java script</h1>
+    <img src="1.jpg" alt="workplace" usemap="#workmap" width="400" height="370">
+    <map name="workmap">
+        <area shape="circle" coords="337,300,20" href="5.jpg" alt="" onclick="myfunction()">
+    </map>
+    <script>
+        function myfunction(){
+            alert("you clicked the coffe cup");
+        }
+    </script>
+    <!--A clickable area can also trigger a JavaScript function.
+Add a click event to the <area> element to execute a JavaScript function:
+Here, we use the onclick attribute to execute 
+a JavaScript function when the area is clicked:-->
+</body>
+</html>

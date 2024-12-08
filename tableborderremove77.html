@@ -3,20 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rounded border</title>
+    <title>Document</title>
     <style>
-      table,
+      table {
+        border-collapse: collapse;
+      }
       td,
       th {
-        border: 1px solid black;
-        border-radius: 10px;
+        border-left: 1px solid red;
+
+        border-bottom: 1px solid red;
+        border-top: 1px solid red;
+        padding: 8px;
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <h1>table width rounded borders</h1>
+    <h1>Border table dividers</h1>
     <p>
-      use the css border -redius property to add rounded corners to the borders
+      Add the border-bottom propertty to the tr element for horizontal dividers
     </p>
     <table style="width: 100%">
       <tr>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        .menu a{
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+        .right{
+            background-color: #e5e5e5;
+            float: right;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+
+        }
+        @media only screen and(max-widh :620px){
+            .menu,.main,.right{
+                width: 100%;
+            }
+        }
+        
+    </style>
+  </head>
+  <body
+    style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(113, 174, 174);"
+  >
+    <h1>Responsive Web Page</h1>
+    <div style="background-color: #e5e5e5; text-align: center; padding: 15px">
+      <h1>Hello World</h1>
+    </div>
+
+    <div style="overflow: auto">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 3</a>
+      </div>
+
+      <div class="main">
+        <h2>LORUM IPSUM</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi veniam
+          voluptas quos sunt? Alias, architecto ea. Inventore provident magni
+          repellendus?
+        </p>
+      </div>
+      <div class="right">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim facilis
+          atque exercitationem vero neque assumenda!
+        </p>
+      </div>
+    </div>
+    
+    <div style="background-color: #e5e5e5;text-align: center;padding: 10px; margin-top: 7px;">
+       <p>
+        @ copyright corpusdatahub.com
+
+       </p> 
+    </div>
+  </body>
+</html>

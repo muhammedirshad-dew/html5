@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .menu{
+            float: left;
+            width: 20%;
+        }
+        .menuitem{
+            padding:8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        .right{
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding:10px 15px;
+            margin-top: 7px;
+        }
+        @media only screen and (max-width:800px){
+            .main{
+                width: 80%;
+                padding: 0;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .menu,
+            .main,
+            .right{
+                width: 100%;
+            }
+        }
+            
+        
+    </style>
+  </head>
+  <body>
+    <div style="background-color: #f1f1f1; padding: 15px">
+      <h1>Layout using div</h1>
+    </div>
+
+    <div style="overflow: auto">
+      <div class="menu">
+        <div class="menuitem">The Walk</div>
+        <div class="menuitem">Trancport</div>
+        <div class="menuitem">History</div>
+        <div class="menuitem">Gallery</div>
+      </div>
+      <div class="main">
+        <h2>THe Walk</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          cupiditate architecto, officiis ad ratione, distinctio, ea itaque rem
+          placeat quaerat officia alias aliquam error iusto harum omnis quam
+          veniam. Facilis!
+        </p>
+        <img src="4.jpg" style="width: 100%" alt="" />
+      </div>
+      <div class="right">
+        <h2>what?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          sapiente in dolorum repudiandae veritatis ullam officiis aliquam
+          cumque labore animi.
+        </p>
+        <h2>where?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          ipsum voluptatem, officiis doloribus deserunt rem aliquam dolor
+          deleniti porro nesciunt provident aperiam assumenda soluta quidem
+          dolore nihil, sed quisquam distinctio!
+        </p>
+        <h2>price</h2>
+        <p>The walk is free!</p>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+        font-size: 12px;
+        color: white;
+      "
+    >Footer </div>
+  </body>
+</html>

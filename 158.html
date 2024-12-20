@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Range Input Example</title>
-  <style>
-    .range-container {
-      margin-top: 20px;
-    }
-    .value-display {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h2>Range Input Example</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range Input Example</title>
+    <style>
+      .range-container {
+        margin-top: 20px;
+      }
+      .value-display {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Range Input Example</h2>
 
-  <form>
-    <label for="range">Select a value (0 to 100):</label><br>
-    <input type="range" id="range" name="range" min="0" max="100" value="50" step="1" oninput="updateValue(this.value)">
-    
-    <div class="range-container">
-      <span class="value-display" id="rangeValue">50</span>
-    </div>
-  </form>
+    <form>
+      <label for="range">Select a value (0 to 100):</label><br />
+      <input
+        type="range"
+        id="range"
+        name="range"
+        min="0"
+        max="100"
+        value="50"
+        step="1"
+        oninput="updateValue(this.value)"
+      />
 
-  <script>
-    function updateValue(val) {
-      document.getElementById("rangeValue").textContent = val;
-    }
-  </script>
-</body>
+      <div class="range-container">
+        <span class="value-display" id="rangeValue">50</span>
+      </div>
+    </form>
+
+    <script>
+      function updateValue(val) {
+        document.getElementById("rangeValue").textContent = val;
+      }
+    </script>
+  </body>
 </html>
